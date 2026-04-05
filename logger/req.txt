@@ -1,0 +1,18 @@
+
+
+Logger Library:
+
+- Support for leveled logging
+- Support for structured logging formats
+- Support for logging contextual data
+- Error logging behavior (detail stacktrace of error)
+- Low latency, Low Memory usage
+- Should not hinder the application behavior
+- Support for log sampling
+
+
+LoggerAPI -> Leveled Logging -> Encoder -> Sink
+
+
+
+ 
