@@ -33,7 +33,6 @@ func (s *SlidingWindowCounterLimiter) Close() {
 }
 
 func (s *SlidingWindowCounterLimiter) Allow(ctx context.Context, req Request) (Decision, error) {
-
 	return Decision{}, nil
 }
 
