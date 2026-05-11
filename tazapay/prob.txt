@@ -1,0 +1,19 @@
+// Requirements:
+
+Our platform integrates with PSP provider(RazorPay)
+Our merchants integrates with our platform
+
+// ProviderID, EventID, EventType, Payload(reference_id), ReceivedAt, 
+- Customer will come and make a order.
+- Customer calls I want to complete order
+- Merchant calls our platform (Order_id, idemptonecy_key, payment_method(cash, card, UPI))
+- Our platform -> validation, intelligence -> provider
+- platform (id, reference_id, psp_id(null), status)
+- platform says provider (idempotency_key, reference_id, amount) PSP provdier(payment_key)
+- PSP provider call a webhook(ProviderID, EventID, EventType, Payload(reference_id), ReceivedAt)
+
+/*
+
+- Webhook layer func() -> []queue -> (set of consumer subscriber)
+
+*/
