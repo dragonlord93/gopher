@@ -1,0 +1,16 @@
+
+
+/*
+Design Splitwise.
+
+- user and groups are supported
+- expense can be added among users or in a groups
+- expenes can be split equally, by percentage, by share
+- user must be able to see who owes whom what
+
+
+Entities: User, expense
+Actions: Add Expense with split, View who owes whom
+
+
+*/
